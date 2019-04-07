@@ -4,16 +4,21 @@
         <meta charset= "UTF-8">
         <title>GifTastic</title>
         <link rel= "stylesheet" href= "assets/css/style.css">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <div class= "container">
-            <h1>Getting Giphy in Atlanta</h1>
 
+            <div class= "heading">
+            <h1><img src="assets/images/atlien.png" id="atlien" alt="Atlien"/>Getting Giphy in Atlanta</h1>
+            </div>
+
+            <div class= "container">
             <p>Embrace your ATLien self and click the buttons to find some Atlanta GIFs!</p>
             <!-- buttons will be dumped here -->
             <div id= "buttons-view"></div>
+
 
             <p>Not satisfied with these Atlanta GIFs? Click here to add one!</p>
 
@@ -22,9 +27,9 @@
                 <label for= "atlanta-input">Search for more GIFs</label>
                 <input type= "text" id="atlanta-input">
                 <br>
-                
+
                 <!-- triggers AJAX call and new button to be added -->
-                <input id= "find-atlanta" type= "submit" value= "Search Atlanta">
+                <input id= "find-atlanta" type= "submit" value= "Search">
 
                 <!-- button/JSON contents dumped here -->
                 <div id= "atlGIFview"></div>

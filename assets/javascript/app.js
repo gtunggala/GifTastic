@@ -11,12 +11,8 @@
 // search parameters:
 // q= rainbow
 
-
-
-
 var api= "https://api.giphy.com/v1/gifs/search?";
 var apiKey= "&api_key=tLhhmbIr7oigYS7Q6RvF9zhGa48cHBic";
-var query= "&q=rainbow";
 
 var availableAtl = [
     'Atlanta',
@@ -28,9 +24,7 @@ var availableAtl = [
     'Atlanta Hawks',
     'Bird scooter',
     'Outkast',
-    'Pink Trap house',
     'Murder Kroger',
-    'Tiny Doors ATL',
     'Donald Glover',
     'Chicken wings',
     'Traffic',
@@ -39,17 +33,16 @@ var availableAtl = [
     'Buford Highway',
     'Snowpocalypse',
     'Georgia',
-    'In the Perimeter',
     'Buckhead',
     'Dirty south',
-    'Shane Company'
+    'The Shane Company'
 ]
 
 function renderAtlButton() {
     $('#buttons-view').empty();
 
     for (var i= 0; i < availableAtl.length; i++) {
-        console.log(availableAtl[i]);
+        // console.log(availableAtl[i]);
 
         const button= $('<button>'); //dynamically creating buttons
         button.addClass('atlBtn');
@@ -57,7 +50,6 @@ function renderAtlButton() {
         button.text(availableAtl[i]); //text for buttons
         $('#buttons-view').append(button);
     }
-
 }
 
 function setup() {
@@ -79,11 +71,11 @@ function setup() {
         for (var i= 0; i < results.length; i++) {
             
             const atlRating= results[i].rating;
-            console.log(atlRating);
+            // console.log(atlRating);
 
             const displayatlRating= $('<p>').text('Rated" ' + atlRating);
             const atlImgURL= results[i].images.downsized_large.url;
-            console.log(atlImgURL);
+            // console.log(atlImgURL);
 
             const atlGifImg= $('<img>').attr('src', atlImgURL);
 
@@ -99,14 +91,10 @@ $('#find-atlanta').on('click', function() {
     var newButton= $('#atlanta-input').val().trim();
     availableAtl.push(newButton);
     renderAtlButton();
-    console.log(availableAtl);
-    console.log('mohsi moshi')
+    // console.log(availableAtl);
 });
 
-//$('.atlBtn').on('click', setup());
-
-
+//$('.atlBtn').on('click', setup()); IDK what this part is
 
 $(document).on('click', '.atlBtn', setup);
-
 renderAtlButton();

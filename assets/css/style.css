@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+* {
+    background: white;
+}
+#atlien {
+    width: 100px;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 50px;
+    display: inline;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif, bold;
+    color: rgb(10, 17, 82)
+}
+
+.container {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    color: rgb(10, 17, 82)
+
+}
+
+.atlBtn{
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    border: none;
+    background-color: #4CAF50;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+.atlBtn:hover {
+    cursor: pointer;
+    background: rgb(18, 42, 177);
+}
+
+#find-atlanta {
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    border: none;
+    background-color: rgb(209, 24, 24);
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+#find-atlanta:hover {
+    cursor: pointer;
+    background: rgb(18, 42, 177);
+}
